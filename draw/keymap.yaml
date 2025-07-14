@@ -1,0 +1,82 @@
+layout:
+  qmk_keyboard: corne_rotated
+  layout_name: LAYOUT_split_3x5_3
+layers:
+  BASE:
+    - [Q, Y, O, U, "-", J, G, N, W, K]
+    - [{h: Gui, t: H}, {h: Alt, t: I}, {h: Ctrl, t: E}, {h: Shift, t: A}, {s: ":", t: "."}, P, {h: Shift, t: D}, {h: Ctrl, t: R}, {h: Alt, t: S}, {h: Gui, t: L}]
+    - [X, /, {s: "\"", t: "'"}, {s: ";", t: ","}, Z, B, C, M, F, V]
+    - {h: Num, t: num-word}
+    - {h: Media, t: Space}
+    - {h: Fun, t: ⟐}
+    - {h: Nav, t: ⟐}
+    - {h: Sym, t: T}
+    - {h: Acc, t: Bspace}
+  NUM:
+    - [null, null, null, null, null, "*", "7", "8", "9", ","]
+    - [null, null, null, null, null, "+", "4", "5", "6", "."]
+    - [null, null, null, null, null, "-", "1", "2", "3", /]
+    - {type: held}
+    - null
+    - null
+    - "="
+    - "0"
+    - Bspace
+  MEDIA:
+    - [null, null, null, null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null]
+    - null
+    - {type: held}
+    - null
+    - null
+    - null
+    - null
+  FUN:
+    - [null, null, null, null, null, null, F7, F8, F9, F12]
+    - [null, null, null, null, null, null, F4, F5, F6, F11]
+    - [null, null, null, null, null, null, F1, F2, F3, F10]
+    - null
+    - null
+    - {type: held}
+    - ⟐
+    - T
+    - Bspace
+  NAV:
+    - ["Win Close", "Tab Prev", "Tab Next", "Tab Close", "Vol Up", Home, "Page Down", "Page Up", End, null]
+    - [⮜, ⮟ , ⮝ , ⮞ , "Vol Down", Left, Down, Up, Right, Calc]
+    - [null, "Win Prev", "Win Next", "Paste", "Play Pause", Insert, Delete, Prev, Next, null]
+    - null
+    - null
+    - null
+    - {type: held}
+    - null
+    - null
+  SYM:
+    - ["`", "<", ">", "-", "|", "^", "{", "}", "$", null]
+    - ["!", "*", "/", "=", "&", "#", "(", ")", ";", "\""]
+    - ["~", "+", "[", "]", "%", "@", ":", ",", ".", "'"]
+    - Bspace
+    - Space
+    - ⟐
+    - null
+    - {type: held}
+    - null
+  ACC:
+    - ["Ü", "Ô", "Ê", "Ë", null, null, null, null, null, null]
+    - ["Û", "Î", "É", "À", null, null, null, null, null, null]
+    - ["Ù", "Ï", "È", "Â", null, null, "Ç", null, null, null]
+    - Bspace
+    - Space
+    - ⟐
+    - null
+    - null
+    - {type: held}
+combos:
+  - {p: [2, 3], k: Esc, l: ["BASE"]}
+  - {p: [12, 13], k: Tab, l: ["BASE"]}
+  - {p: [22, 23], k: caps-word , l: ["BASE"]}
+  - {p: [6, 7], k: Del, l: ["BASE"]}
+  - {p: [16, 17], k: Enter, l: ["BASE"]}
+  - {p: [26, 27], k: Ins, l: ["BASE"]}
+  
