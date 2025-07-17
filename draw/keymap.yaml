@@ -23,7 +23,7 @@ layers:
     - "0"
     - Bspace
   FUN:
-    - [null, null, null, null, null, null, F7, F8, F9, F12]
+    - [M0, M1, M2, M3, null, null, F7, F8, F9, F12]
     - [⏮, Volume Down, Volume Up, ⏭, null, null, F4, F5, F6, F11]
     - [BT0, BT1, BT2, BT3, null, null, F1, F2, F3, F10]
     - null
@@ -43,7 +43,7 @@ layers:
     - null
     - null
   SYM:
-    - ["`", "<", ">", "-", "|", "^", "{", "}", "$", null]
+    - ["`", "<", ">", "-", "|", "^", "{", "}", "$", "\\"]
     - ["!", "*", "/", "=", "&", "#", "(", ")", ";", "\""]
     - ["~", "+", "[", "]", "%", "@", ":", ",", ".", "'"]
     - Bspace
