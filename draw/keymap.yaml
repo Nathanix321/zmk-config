@@ -5,7 +5,7 @@ layers:
   BASE:
     - [Q, Y, O, U, "-", J, G, N, W, K]
     - [{h: Gui, t: H}, {h: Alt, t: I}, {h: Ctrl, t: E}, {h: Shift, t: A}, {s: ":", t: "."}, P, {h: Shift, t: D}, {h: Ctrl, t: R}, {h: Alt, t: S}, {h: Gui, t: L}]
-    - [X, /, {s: "\"", t: "'"}, {s: ";", t: ","}, Z, B, C, M, F, V]
+    - [X, {s: "!", t: "?"}, {s: "\"", t: "'"}, {s: ";", t: ","}, Z, B, C, M, F, V]
     - {h: Num, t: num-word}
     - {h: Fun, t: Space}
     - {h: Shift, t: ⟐}
@@ -25,7 +25,7 @@ layers:
   FUN:
     - [M0, M1, M2, M3, null, null, F7, F8, F9, F12]
     - [⏮, Volume Down, Volume Up, ⏭, null, null, F4, F5, F6, F11]
-    - [BT0, BT1, BT2, BT3, null, null, F1, F2, F3, F10]
+    - [BT0, BT1, BT2, BT3, BT Clear, null, F1, F2, F3, F10]
     - null
     - {type: held}
     - null
