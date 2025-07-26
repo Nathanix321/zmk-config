@@ -95,77 +95,71 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 /* Arcane keys & auto-layers */
 
 ZMK_ADAPTIVE_KEY(
-    compatible = "zmk,behavior-adaptive-key";
-    #binding-cells = <0>;
-    bindings = <&arcane_left>;
-
-    kp_a_left     { trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                        }; // |A|
-    kp_b_left     { trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;          }; // |ECAUSE|
-    kp_c_left     { trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp A &kp N>;                                  }; // |AN|
-    kp_d_left     { trigger-keys = <D>;     max-prior-idle-ms = <1000>; bindings = <&kp Y>;                                        }; // |Y|
-    kp_e_left     { trigger-keys = <E>;     max-prior-idle-ms = <1000>; bindings = <&kp E>;                                        }; // |E|
-    kp_f_left     { trigger-keys = <F>;     max-prior-idle-ms = <1000>; bindings = <&kp O &kp R>;                                  }; // |OR|
-    kp_g_left     { trigger-keys = <G>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp E &kp R &kp A &kp L>;          }; // |ENERAL|
-    kp_h_left     { trigger-keys = <H>;     max-prior-idle-ms = <1000>; bindings = <&kp H>;                                        }; // |H|
-    kp_i_left     { trigger-keys = <I>;     max-prior-idle-ms = <1000>; bindings = <&kp I>;                                        }; // |I|
-    kp_j_left     { trigger-keys = <J>;     max-prior-idle-ms = <1000>; bindings = <&kp U &kp S &kp T>;                            }; // |UST|
- // kp_k_left     { trigger-keys = <K>;     max-prior-idle-ms = <1000>; bindings = <>;                                             }; 
-    kp_l_left     { trigger-keys = <L>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                        }; // |K|
-    kp_m_left     { trigger-keys = <M>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
-    kp_n_left     { trigger-keys = <N>;     max-prior-idle-ms = <1000>; bindings = <&kp I &kp O &kp N>;                            }; // |ION|
-    kp_o_left     { trigger-keys = <O>;     max-prior-idle-ms = <1000>; bindings = <&kp O>;                                        }; // |O|
-    kp_p_left     { trigger-keys = <P>;     max-prior-idle-ms = <1000>; bindings = <&kp R &kp E &kp T &kp T &kp Y>;                }; // |RETTY|
-    kp_q_left     { trigger-keys = <Q>;     max-prior-idle-ms = <1000>; bindings = <&kp Q>;                                        }; // |Q|
-    kp_r_left     { trigger-keys = <R>;     max-prior-idle-ms = <1000>; bindings = <&kp L>;                                        }; // |L|
-    kp_s_left     { trigger-keys = <S>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                        }; // |K|
-    kp_t_left     { trigger-keys = <T>;     max-prior-idle-ms = <1000>; bindings = <&kp T>;                                        }; // |T|
-    kp_u_left     { trigger-keys = <U>;     max-prior-idle-ms = <1000>; bindings = <&kp U>;                                        }; // |U|
- // kp_v_left     { trigger-keys = <V>;     max-prior-idle-ms = <1000>; bindings = <>;                                             };
-    kp_w_left     { trigger-keys = <W>;     max-prior-idle-ms = <1000>; bindings = <&kp H &kp I &kp C &kp H>;                      }; // |HICH|
-    kp_x_left     { trigger-keys = <X>;     max-prior-idle-ms = <1000>; bindings = <&kp X>;                                        }; // |X|
-    kp_y_left     { trigger-keys = <Y>;     max-prior-idle-ms = <1000>; bindings = <&kp Y>;                                        }; // |Y|
-    kp_z_left     { trigger-keys = <Z>;     max-prior-idle-ms = <1000>; bindings = <&kp Z>;                                        }; // |Z|
- // kp_space_left { trigger-keys = <SPACE>; max-prior-idle-ms = <1000>; bindings = <>;                                             }; 
-    kp_dot_left   { trigger-keys = <DOT>;   max-prior-idle-ms = <1000>; bindings = <&kp DOT>;                                      }; // |.|
- // kp_comma_left { trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <>;                                             };
-    kp_pound_left { trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
+    arcane_left, bindings = <&kp arcane_left>;
+    kp_a_left     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                        }; // |A|
+    kp_b_left     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;          }; // |ECAUSE|
+    kp_c_left     { strict-modifiers; trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp A &kp N>;                                  }; // |AN|
+    kp_d_left     { strict-modifiers; trigger-keys = <D>;     max-prior-idle-ms = <1000>; bindings = <&kp Y>;                                        }; // |Y|
+    kp_e_left     { strict-modifiers; trigger-keys = <E>;     max-prior-idle-ms = <1000>; bindings = <&kp E>;                                        }; // |E|
+    kp_f_left     { strict-modifiers; trigger-keys = <F>;     max-prior-idle-ms = <1000>; bindings = <&kp O &kp R>;                                  }; // |OR|
+    kp_g_left     { strict-modifiers; trigger-keys = <G>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp E &kp R &kp A &kp L>;          }; // |ENERAL|
+    kp_h_left     { strict-modifiers; trigger-keys = <H>;     max-prior-idle-ms = <1000>; bindings = <&kp H>;                                        }; // |H|
+    kp_i_left     { strict-modifiers; trigger-keys = <I>;     max-prior-idle-ms = <1000>; bindings = <&kp I>;                                        }; // |I|
+    kp_j_left     { strict-modifiers; trigger-keys = <J>;     max-prior-idle-ms = <1000>; bindings = <&kp U &kp S &kp T>;                            }; // |UST|
+ // kp_k_left     { strict-modifiers; trigger-keys = <K>;     max-prior-idle-ms = <1000>; bindings = <>;                                             }; 
+    kp_l_left     { strict-modifiers; trigger-keys = <L>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                        }; // |K|
+    kp_m_left     { strict-modifiers; trigger-keys = <M>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
+    kp_n_left     { strict-modifiers; trigger-keys = <N>;     max-prior-idle-ms = <1000>; bindings = <&kp I &kp O &kp N>;                            }; // |ION|
+    kp_o_left     { strict-modifiers; trigger-keys = <O>;     max-prior-idle-ms = <1000>; bindings = <&kp O>;                                        }; // |O|
+    kp_p_left     { strict-modifiers; trigger-keys = <P>;     max-prior-idle-ms = <1000>; bindings = <&kp R &kp E &kp T &kp T &kp Y>;                }; // |RETTY|
+    kp_q_left     { strict-modifiers; trigger-keys = <Q>;     max-prior-idle-ms = <1000>; bindings = <&kp Q>;                                        }; // |Q|
+    kp_r_left     { strict-modifiers; trigger-keys = <R>;     max-prior-idle-ms = <1000>; bindings = <&kp L>;                                        }; // |L|
+    kp_s_left     { strict-modifiers; trigger-keys = <S>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                        }; // |K|
+    kp_t_left     { strict-modifiers; trigger-keys = <T>;     max-prior-idle-ms = <1000>; bindings = <&kp T>;                                        }; // |T|
+    kp_u_left     { strict-modifiers; trigger-keys = <U>;     max-prior-idle-ms = <1000>; bindings = <&kp U>;                                        }; // |U|
+ // kp_v_left     { strict-modifiers; trigger-keys = <V>;     max-prior-idle-ms = <1000>; bindings = <>;                                             };
+    kp_w_left     { strict-modifiers; trigger-keys = <W>;     max-prior-idle-ms = <1000>; bindings = <&kp H &kp I &kp C &kp H>;                      }; // |HICH|
+    kp_x_left     { strict-modifiers; trigger-keys = <X>;     max-prior-idle-ms = <1000>; bindings = <&kp X>;                                        }; // |X|
+    kp_y_left     { strict-modifiers; trigger-keys = <Y>;     max-prior-idle-ms = <1000>; bindings = <&kp Y>;                                        }; // |Y|
+    kp_z_left     { strict-modifiers; trigger-keys = <Z>;     max-prior-idle-ms = <1000>; bindings = <&kp Z>;                                        }; // |Z|
+ // kp_space_left { strict-modifiers; trigger-keys = <SPACE>; max-prior-idle-ms = <1000>; bindings = <>;                                             }; 
+    kp_dot_left   { strict-modifiers; trigger-keys = <DOT>;   max-prior-idle-ms = <1000>; bindings = <&kp DOT>;                                      }; // |.|
+ // kp_comma_left { strict-modifiers; trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <>;                                             };
+    kp_pound_left { strict-modifiers; trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
 )
 
 ZMK_ADAPTIVE_KEY(
-    compatible = "zmk,behavior-adaptive-key";
-    #binding-cells = <0>;
-    bindings = <&arcane_right>;
-
-    kp_a_right     { trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp N &kp D &kp SPACE>;                              }; // |ND |
-    kp_b_right     { trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp B>;                                              }; // |B|
-    kp_c_right     { trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp C>;                                              }; // |C|
-    kp_d_right     { trigger-keys = <D>;     max-prior-idle-ms = <1000>; bindings = <&kp D>;                                              }; // |D|
-    kp_e_right     { trigger-keys = <E>;     max-prior-idle-ms = <1000>; bindings = <&kp U>;                                              }; // |U|
-    kp_f_right     { trigger-keys = <F>;     max-prior-idle-ms = <1000>; bindings = <&kp F>;                                              }; // |F|
-    kp_g_right     { trigger-keys = <G>;     max-prior-idle-ms = <1000>; bindings = <&kp G>;                                              }; // |G|
- // kp_h_right     { trigger-keys = <H>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
-    kp_i_right     { trigger-keys = <I>;     max-prior-idle-ms = <1000>; bindings = <&kp O &kp N>;                                        }; // |ON|
-    kp_j_right     { trigger-keys = <J>;     max-prior-idle-ms = <1000>; bindings = <&kp J>;                                              }; // |J|
-    kp_k_right     { trigger-keys = <K>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                              }; // |K|
-    kp_l_right     { trigger-keys = <L>;     max-prior-idle-ms = <1000>; bindings = <&kp L>;                                              }; // |L|
-    kp_m_right     { trigger-keys = <M>;     max-prior-idle-ms = <1000>; bindings = <&kp M>;                                              }; // |M|
-    kp_n_right     { trigger-keys = <N>;     max-prior-idle-ms = <1000>; bindings = <&kp N>;                                              }; // |N|
-    kp_o_right     { trigger-keys = <O>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                              }; // |A|
-    kp_p_right     { trigger-keys = <P>;     max-prior-idle-ms = <1000>; bindings = <&kp P>;                                              }; // |P|
-    kp_q_right     { trigger-keys = <Q>;     max-prior-idle-ms = <1000>; bindings = <&kp U &kp E &kp E &kp N>;                            }; // |UEEN|
-    kp_r_right     { trigger-keys = <R>;     max-prior-idle-ms = <1000>; bindings = <&kp R>;                                              }; // |R|
-    kp_s_right     { trigger-keys = <S>;     max-prior-idle-ms = <1000>; bindings = <&kp S>;                                              }; // |S|
-    kp_t_right     { trigger-keys = <T>;     max-prior-idle-ms = <1000>; bindings = <&kp M &kp E &kp N &kp T>;                            }; // |MENT|
-    kp_u_right     { trigger-keys = <U>;     max-prior-idle-ms = <1000>; bindings = <&kp E>;                                              }; // |E|
-    kp_v_right     { trigger-keys = <V>;     max-prior-idle-ms = <1000>; bindings = <&kp V>;                                              }; // |V|
-    kp_w_right     { trigger-keys = <W>;     max-prior-idle-ms = <1000>; bindings = <&kp W>;                                              }; // |W|
- // kp_x_right     { trigger-keys = <X>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
-    kp_y_right     { trigger-keys = <Y>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp A &kp H>;                                  }; // |EAH|
- // kp_z_right     { trigger-keys = <Z>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
-    kp_space_right { trigger-keys = <SPACE>; max-prior-idle-ms = <1000>; bindings = <&kp T &kp H &kp E &kp SPACE>;                        }; // |THE |
-    kp_dot_right   { trigger-keys = <DOT>;   max-prior-idle-ms = <1000>; bindings = <&kp FSLH>;                                           }; // |/|
-    kp_comma_right { trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <&kp B &kp U &kp T>;                                  }; // |BUT|
-    kp_pound_right { trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
+    arcane_right, bindings = <&kp arcane_right>;
+    kp_a_right     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp N &kp D &kp SPACE>;                              }; // |ND |
+    kp_b_right     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp B>;                                              }; // |B|
+    kp_c_right     { strict-modifiers; trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp C>;                                              }; // |C|
+    kp_d_right     { strict-modifiers; trigger-keys = <D>;     max-prior-idle-ms = <1000>; bindings = <&kp D>;                                              }; // |D|
+    kp_e_right     { strict-modifiers; trigger-keys = <E>;     max-prior-idle-ms = <1000>; bindings = <&kp U>;                                              }; // |U|
+    kp_f_right     { strict-modifiers; trigger-keys = <F>;     max-prior-idle-ms = <1000>; bindings = <&kp F>;                                              }; // |F|
+    kp_g_right     { strict-modifiers; trigger-keys = <G>;     max-prior-idle-ms = <1000>; bindings = <&kp G>;                                              }; // |G|
+ // kp_h_right     { strict-modifiers; trigger-keys = <H>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
+    kp_i_right     { strict-modifiers; trigger-keys = <I>;     max-prior-idle-ms = <1000>; bindings = <&kp O &kp N>;                                        }; // |ON|
+    kp_j_right     { strict-modifiers; trigger-keys = <J>;     max-prior-idle-ms = <1000>; bindings = <&kp J>;                                              }; // |J|
+    kp_k_right     { strict-modifiers; trigger-keys = <K>;     max-prior-idle-ms = <1000>; bindings = <&kp K>;                                              }; // |K|
+    kp_l_right     { strict-modifiers; trigger-keys = <L>;     max-prior-idle-ms = <1000>; bindings = <&kp L>;                                              }; // |L|
+    kp_m_right     { strict-modifiers; trigger-keys = <M>;     max-prior-idle-ms = <1000>; bindings = <&kp M>;                                              }; // |M|
+    kp_n_right     { strict-modifiers; trigger-keys = <N>;     max-prior-idle-ms = <1000>; bindings = <&kp N>;                                              }; // |N|
+    kp_o_right     { strict-modifiers; trigger-keys = <O>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                              }; // |A|
+    kp_p_right     { strict-modifiers; trigger-keys = <P>;     max-prior-idle-ms = <1000>; bindings = <&kp P>;                                              }; // |P|
+    kp_q_right     { strict-modifiers; trigger-keys = <Q>;     max-prior-idle-ms = <1000>; bindings = <&kp U &kp E &kp E &kp N>;                            }; // |UEEN|
+    kp_r_right     { strict-modifiers; trigger-keys = <R>;     max-prior-idle-ms = <1000>; bindings = <&kp R>;                                              }; // |R|
+    kp_s_right     { strict-modifiers; trigger-keys = <S>;     max-prior-idle-ms = <1000>; bindings = <&kp S>;                                              }; // |S|
+    kp_t_right     { strict-modifiers; trigger-keys = <T>;     max-prior-idle-ms = <1000>; bindings = <&kp M &kp E &kp N &kp T>;                            }; // |MENT|
+    kp_u_right     { strict-modifiers; trigger-keys = <U>;     max-prior-idle-ms = <1000>; bindings = <&kp E>;                                              }; // |E|
+    kp_v_right     { strict-modifiers; trigger-keys = <V>;     max-prior-idle-ms = <1000>; bindings = <&kp V>;                                              }; // |V|
+    kp_w_right     { strict-modifiers; trigger-keys = <W>;     max-prior-idle-ms = <1000>; bindings = <&kp W>;                                              }; // |W|
+ // kp_x_right     { strict-modifiers; trigger-keys = <X>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
+    kp_y_right     { strict-modifiers; trigger-keys = <Y>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp A &kp H>;                                  }; // |EAH|
+ // kp_z_right     { strict-modifiers; trigger-keys = <Z>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
+    kp_space_right { strict-modifiers; trigger-keys = <SPACE>; max-prior-idle-ms = <1000>; bindings = <&kp T &kp H &kp E &kp SPACE>;                        }; // |THE |
+    kp_dot_right   { strict-modifiers; trigger-keys = <DOT>;   max-prior-idle-ms = <1000>; bindings = <&kp FSLH>;                                           }; // |/|
+    kp_comma_right { strict-modifiers; trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <&kp B &kp U &kp T>;                                  }; // |BUT|
+    kp_pound_right { strict-modifiers; trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
 )
 
 // Tap: num-word | Hold: num-layer.
