@@ -95,7 +95,7 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 /* Arcane keys & auto-layers */
 
 ZMK_ADAPTIVE_KEY(
-    arcane_left, bindings = <&arcane_l>;
+    arcane_l, bindings = <&arcane_l>;
     kp_a_left     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                        }; // |A|
     kp_b_left     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;          }; // |ECAUSE|
     kp_c_left     { strict-modifiers; trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp A &kp N>;                                  }; // |AN|
@@ -129,7 +129,7 @@ ZMK_ADAPTIVE_KEY(
 )
 
 ZMK_ADAPTIVE_KEY(
-    arcane_right, bindings = <&arcane_r>;
+    arcane_r, bindings = <&arcane_r>;
     kp_a_right     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp N &kp D &kp SPACE>;                              }; // |ND |
     kp_b_right     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1000>; bindings = <&kp B>;                                              }; // |B|
     kp_c_right     { strict-modifiers; trigger-keys = <C>;     max-prior-idle-ms = <1000>; bindings = <&kp C>;                                              }; // |C|
