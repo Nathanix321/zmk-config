@@ -17,9 +17,6 @@
 #define XXX &none
 #define ___ &trans
 
-#define CONFIG_ZMK_ADAPTIVE_KEY_MAX_TRIGGER_CONDITIONS 64
-$define CONFIG_ZMK_ADAPTIVE_KEY_MAX_BINDINGS 8
-
 /* Global defaults */
 
 #define QUICK_TAP_MS 175
