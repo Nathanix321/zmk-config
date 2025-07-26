@@ -94,9 +94,6 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 /* Arcane keys & auto-layers */
 
-#define ARCANE_LEFT  &arcane_left
-#define ARCANE_RIGHT &arcane_right
-
 ZMK_ADAPTIVE_KEY(
     compatible = "zmk,behavior-adaptive-key";
     #binding-cells = <0>;
