@@ -17,7 +17,7 @@ layers:
     - [Gui, Alt, Ctrl, Alt, null, "+", "4", "5", "6", {s: ":", t: "."}]
     - [null, null, null, null, null, "-", "1", "2", "3", /]
     - {type: held}
-    - null
+    - Space
     - null
     - "="
     - "0"
@@ -36,9 +36,19 @@ layers:
     - [Undo, Cut, Copy, Paste, Redo, null, null, null, null, null]
     - [←, ↓, ↑, →, "Caps Lock", null, Shift, Ctrl, Alt, Gui]
     - [Home, "Page Down", "Page Up", End, Ins, null, null, null, null, null]
+    - Bspace
+    - Space
+    - null
+    - {type: held}
+    - null
+    - null
+  MOUSE:
+    - [Undo, Cut, Copy, Paste, Redo, null, null, null, null, null]
+    - [←, ↓, ↑, →, "Caps Lock", null, Shift, Ctrl, Alt, Gui]
+    - [Scroll left, Scroll down, Scroll up, Scroll down, Ins, null, null, null, null, null]
+    - M
     - L
     - R
-    - M
     - {type: held}
     - null
     - null
@@ -62,6 +72,7 @@ layers:
     - null
     - null
     - {type: held}
+    
 combos:
   - {p: [2, 3], k: Esc, l: ["BASE"]}
   - {p: [12, 13], k: Tab, l: ["BASE"]}
@@ -69,5 +80,5 @@ combos:
   - {p: [6, 7], k: Del, l: ["BASE"]}
   - {p: [16, 17], k: Enter, l: ["BASE"]}
   - {p: [26, 27], k: Ins, l: ["BASE"]}
-  - {p: [6, 8], k: smart-mouse, l: ["NAV"]}
+  - {p: [26, 28], k: smart-mouse, l: ["NAV", "MOUSE"]}
   
