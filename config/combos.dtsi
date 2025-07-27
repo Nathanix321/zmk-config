@@ -19,10 +19,10 @@ ZMK_COMBO(tab,      &hml LS(LCTRL)TAB, LM2 LM1, BASE NAV NUM, COMBO_TERM_FAST, C
 ZMK_COMBO(capsword, &caps_word,        LB2 LB1, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Horizontal combos - right hand */
-ZMK_COMBO(smart_del, &mt LC(DEL) DEL,     RT1 RT2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) // Tap: del | Long-tap: delete word fwd.
-ZMK_COMBO(enter,     &hml RS(LCTRL)ENTER, RM1 RM2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(insert,    &kp INS,             RB1 RB2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(mouse,     &smart_mouse,        RT1 RT3, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(del,    &kp DEL,             RT1 RT2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(enter,  &hml RS(LCTRL)ENTER, RM1 RM2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(insert, &kp INS,             RB1 RB2, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(mouse,  &smart_mouse,        RT1 RT3, BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Combos overlapping HRMs are set up as hold-taps themselves to allow for instantaneous
 // chording of mods. Custom hold-tap instances can be bootstrapped on the go using the
