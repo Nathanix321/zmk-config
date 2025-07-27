@@ -14,9 +14,6 @@
 #define ACC 6
 #define MOUSE 7
 
-#define XXX &none
-#define ___ &trans
-
 /* Global defaults */
 
 #define QUICK_TAP_MS 175
@@ -209,13 +206,13 @@ ZMK_BASE_LAYER(Base,
 
 ZMK_BASE_LAYER(Num,
 //╭──────────────┬──────────────┬──────────────┬──────────────┬────────────────────╮ ╭────────────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-    &kp Q          &kp Y          &kp O          &kp U          &kp MINUS          ,   &kp J                &kp G          &kp N          &kp W          &kp K        ,
+    &none          &none          &none          &none          &none              ,   &kp STAR             &kp N7         &kp N8         &kp N9         &comma_morph ,
 //├──────────────┼──────────────┼──────────────┼──────────────┼────────────────────┤ ├────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-    &hml LGUI H    &hml LALT I    &hml LCTRL E   &hml LSHFT A   &dot_morph         ,   &kp P                &hmr RSHFT D   &hmr LCTRL R   &hmr LALT S    &hmr LGUI L  ,
+    &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none              ,   &kp PLUS             &kp N4         &kp N5         &kp N6         &dot_morph   ,
 //├──────────────┼──────────────┼──────────────┼──────────────┼────────────────────┤ ├────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-    &kp X          &qexcl_morph   &kp APOS       &comma_morph   &kp Z              ,   &kp B                &kp C          &kp M          &kp F          &kp V        ,
+    &none          &none          &none          &none          &none              ,   &kp MINUS            &kp N1         &kp N2         &kp N3         &kp FSLH     ,
 //╰──────────────┴──────────────┼──────────────┼──────────────┼────────────────────┤ ├────────────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
-                                  SMART_NUM      &lt FUN SPACE  &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T      &lt ACC BSPC
+                                  &none          &none          &none              ,   &kp EQUAL            &kp N0         &kp BSPC
 //                              ╰──────────────┼──────────────┼────────────────────╯ ╰────────────────────┴──────────────┴──────────────╯
 )
 
