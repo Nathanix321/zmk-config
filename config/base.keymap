@@ -72,6 +72,22 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
 ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
+#ifdef UNDO
+    #undef UNDO
+#endif
+#ifdef REDO
+    #undef REDO
+#endif
+#ifdef CUT
+    #undef CUT
+#endif
+#ifdef COPY
+    #undef COPY
+#endif
+#ifdef PASTE
+    #undef PASTE
+#endif
+
 #define UNDO  &kp LC(Z)
 #define REDO  &kp LC(Y)
 #define CUT   &kp LC(X)
@@ -160,9 +176,16 @@ ZMK_ADAPTIVE_KEY(
 )
 
 // Tap: num-word | Hold: num-layer.
-#define SMART_NUM &smart_num NUM 0
-ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_word NUM>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+// #define SMART_NUM &smart_num NUM 0
+// ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_word NUM>; flavor = "balanced";
+//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+// #define SMART_NUM &smart_num NUM 0
+// ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
+//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+// ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+//               tapping-term-ms = <200>;)
+#define NUM_WORD &num_word NUM
 
 // Smart-mouse, requires tri-state module.
 ZMK_TRI_STATE(
@@ -220,7 +243,7 @@ ZMK_BASE_LAYER(Base,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        SMART_NUM         &lt FUN SPACE     &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T         &lt ACC BSPC
+                                        &lt NUM NUM_WORD  &lt FUN SPACE     &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T         &lt ACC BSPC
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
