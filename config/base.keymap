@@ -9,10 +9,10 @@
 #define BASE 0
 #define NUM 1
 #define FUN 2
-#define NAV 4
-#define MOUSE 5
-#define SYM 6
-#define ACC 7
+#define NAV 3
+#define MOUSE 4
+#define SYM 5
+#define ACC 6
 
 /* Global defaults */
 
