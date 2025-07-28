@@ -175,17 +175,12 @@ ZMK_ADAPTIVE_KEY(
     kp_pound_right { strict-modifiers; trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
 )
 
-// Tap: num-word | Hold: num-layer.
-// #define SMART_NUM &smart_num NUM 0
-// ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_word NUM>; flavor = "balanced";
-//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-
-// #define SMART_NUM &smart_num NUM 0
-// ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
-//              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-// ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
-//               tapping-term-ms = <200>;)
-#define NUM_WORD &num_word NUM
+// Tap: num-word | double-tap: sticky num-layer | Hold: num-layer.
+#define SMART_NUM &smart_num NUM 0
+ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+              tapping-term-ms = <200>;)
 
 // Smart-mouse, requires tri-state module.
 ZMK_TRI_STATE(
@@ -243,7 +238,7 @@ ZMK_BASE_LAYER(Base,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        &lt NUM NUM_WORD  &lt FUN SPACE     &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T         &lt ACC BSPC
+                                        SMART_NUM         &lt FUN SPACE     &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T         &lt ACC BSPC
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
