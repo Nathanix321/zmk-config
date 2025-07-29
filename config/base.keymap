@@ -106,6 +106,11 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 };
 
 /* Arcane keys & auto-layers */
+#define ARCANE_L_SHFT &arcane_l_shft LSHFT 0
+ZMK_HOLD_TAP(arcane_l_shft, bindings = <&kp>, <&arcane_l>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+
 ZMK_ADAPTIVE_KEY(
     arcane_l, bindings = <&none>;
     kp_a_left     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp A>;                                        }; // |A|
@@ -140,6 +145,11 @@ ZMK_ADAPTIVE_KEY(
     kp_pound_left { strict-modifiers; trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
 )
 
+#define ARCANE_R_NAV &arcane_r_nav NAV 0
+ZMK_HOLD_TAP(arcane_r_nav, bindings = <&mo>, <&arcane_r>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+
 ZMK_ADAPTIVE_KEY(
     arcane_r, bindings = <&none>;
     kp_a_right     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1000>; bindings = <&kp N &kp D &kp SPACE>;                              }; // |ND |
@@ -170,7 +180,7 @@ ZMK_ADAPTIVE_KEY(
  // kp_z_right     { strict-modifiers; trigger-keys = <Z>;     max-prior-idle-ms = <1000>; bindings = <&kp>;                                                };
     kp_space_right { strict-modifiers; trigger-keys = <SPACE>; max-prior-idle-ms = <1000>; bindings = <&kp T &kp H &kp E &kp SPACE>;                        }; // |THE |
     kp_dot_right   { strict-modifiers; trigger-keys = <DOT>;   max-prior-idle-ms = <1000>; bindings = <&kp FSLH>;                                           }; // |/|
-    kp_comma_right { strict-modifiers; trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <&kp B &kp U &kp T>;                                  }; // |BUT|
+    kp_comma_right { strict-modifiers; trigger-keys = <COMMA>; max-prior-idle-ms = <1000>; bindings = <&kp SPACE &kp B &kp U &kp T>;                        }; // | BUT|
     kp_pound_right { strict-modifiers; trigger-keys = <POUND>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
 )
 
@@ -237,7 +247,7 @@ ZMK_BASE_LAYER(Base,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        SMART_NUM         &lt FUN SPACE     &mt LSHFT &arcane_l,   &lt NAV &arcane_r    &lt SYM T         &lt ACC BSPC
+                                        SMART_NUM         &lt FUN SPACE     ARCANE_L_SHFT      ,   ARCANE_R_NAV    &lt SYM T         &lt ACC BSPC
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
@@ -297,7 +307,7 @@ ZMK_BASE_LAYER(Sym,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp TILDE         &kp PLUS          &kp LBKT          &kp RBKT          &kp PERCENT        ,   &kp AT               &kp COLON         &kp COMMA         &kp DOT           &kp APOS        ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        &kp BSPC          &kp SPACE         &mt LSHFT &arcane_l,   &none                &none             &none
+                                        &kp BSPC          &kp SPACE         ARCANE_L_SHFT      ,   &none                &none             &none
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
