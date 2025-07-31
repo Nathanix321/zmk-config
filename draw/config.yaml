@@ -2,14 +2,14 @@ draw_config:
   key_w: 60
   key_h: 56
   split_gap: 30.0
-  combo_w: 28
-  combo_h: 26
+  combo_w: 30
+  combo_h: 28
   key_rx: 6.0
   key_ry: 6.0
   dark_mode: true
   n_columns: 2
-  separate_combo_diagrams: true
-  combo_diagrams_scale: 3
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
   inner_pad_w: 2.0
   inner_pad_h: 2.0
   outer_pad_w: 30.0
