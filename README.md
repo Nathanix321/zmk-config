@@ -48,38 +48,23 @@ Finally I made use of caps-word, and num-word.
 
 Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane key trigger is a more complex sequence. Here's the full table : 
 
-| Previous key | Same hand | Opposite hand |
-|--------------|-----------|---------------|
-| 'A'          | 'A'       | 'ND '         |
-| 'B'          | 'B'       | 'ECAUSE '     |
-| 'C'          | 'C'       | 'AN'          |
-| 'D'          | 'D'       | 'Y'           |
-| 'E'          | 'E'       | 'U'           |
-| 'F'          | 'F'       | 'OR'          |
-| 'G'          | 'G'       | 'ENERAL'      |
-| 'H'          | 'H'       |               |
-| 'I'          | 'I'       | 'ON'          |
-| 'J'          | 'J'       | 'UST'         |
-| 'K'          | 'K'       |               |
-| 'L'          | 'L'       | 'K'           |
-| 'M'          | 'M'       | 'ENT'         |
-| 'N'          | 'N'       | 'ION'         |
-| 'O'          | 'O'       | 'A'           |
-| 'P'          | 'P'       | 'RETTY'       |
-| 'Q'          | 'Q'       | 'UEEN'        |
-| 'R'          | 'R'       | 'L'           |
-| 'S'          | 'S'       | 'T'           |
-| 'T'          | 'R'       | 'MENT'        |
-| 'U'          | 'U'       | 'E'           |
-| 'V'          | 'V'       |               |
-| 'W'          | 'W'       | 'HICH'        |
-| 'X'          | 'X'       |               |
-| 'Y'          | 'Y'       | 'EAH'         |
-| 'Z'          | 'Z'       |               |
-| 'SPACE'      |           | 'THE '        |
-| '.'          | '.'       | '/'           |
-| ','          |           | ' BUT '       |
-| '#'          | INCLUDE   | DEFINE        |
+| Previous key | Same hand | Opposite hand | Previous key | Same hand | Opposite hand |
+|--------------|-----------|---------------|--------------|-----------|---------------|
+| 'A'          | 'A'       | 'ND '         | 'P'          | 'P'       | 'RETTY'       |
+| 'B'          | 'B'       | 'ECAUSE '     | 'Q'          | 'Q'       | 'UEEN'        |
+| 'C'          | 'C'       | 'AN'          | 'R'          | 'R'       | 'L'           |
+| 'D'          | 'D'       | 'Y'           | 'S'          | 'S'       | 'T'           |
+| 'E'          | 'E'       | 'U'           | 'T'          | 'T'       | 'MENT'        |
+| 'F'          | 'F'       | 'OR'          | 'U'          | 'U'       | 'E'           |
+| 'G'          | 'G'       | 'ENERAL'      | 'V'          | 'V'       |               |
+| 'H'          | 'H'       |               | 'W'          | 'W'       | 'HICH'        |
+| 'I'          | 'I'       | 'ON'          | 'X'          | 'X'       |               |
+| 'J'          | 'J'       | 'UST'         | 'Y'          | 'Y'       | 'EAH'         |
+| 'K'          | 'K'       |               | 'Z'          | 'Z'       |               |
+| 'L'          | 'L'       | 'K'           | 'SPACE'      |           | 'THE '        |
+| 'M'          | 'M'       | 'ENT'         | '.'          | '.'       | '/'           |
+| 'N'          | 'N'       | 'ION'         | ','          |           | ' BUT '       |
+| 'O'          | 'O'       | 'A'           | '#'          | INCLUDE   | DEFINE        |
 
 ### Number Layer
 <img src="draw\num_keymap.svg">
