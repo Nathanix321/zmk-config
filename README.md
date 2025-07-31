@@ -14,6 +14,7 @@ First things first, big thanks to :
 ### Overview 
 
 ![Base Keymap](draw\base_keymap.svg)
+<img src="draw\base_keymap.svg">
 
 After i bought my keyboard, I looked at layouts and keymaps for days, I ended up with this list of requirements, I zeroed in on thumb alpha layouts (might as well go for broke if I'm moving away from QWERTY).
 
@@ -22,6 +23,7 @@ I looked at [Hands Down Gold](https://sites.google.com/alanreiser.com/handsdown/
 Other functions are then located on 6 additional layers : Numbers, Functions, Navigation, Symbols, Accents (Je suis Québécois, il me faut mes accents français!) which rely on my [Autohotkey config](https://github.com/Nathanix321/autohotkey-config).
 
 ![Whole Keymap](draw\whole_keymap.svg)
+<img src="draw\whole_keymap.svg">
 
 ### Modules
 
@@ -83,6 +85,7 @@ Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane k
 
 ### Number Layer
 ![Number Keymap](draw\num_keymap.svg)
+
 
 Tapping the num-word key toggles the num layer until the number is finished, holding momentarily switched to the number layer.
 
