@@ -53,7 +53,7 @@ Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane k
 | 'A'          | 'A'       | 'ND '         | 'P'          | 'P'       | 'RETTY'       |
 | 'B'          | 'B'       | 'ECAUSE '     | 'Q'          | 'Q'       | 'UEEN'        |
 | 'C'          | 'C'       | 'AN'          | 'R'          | 'R'       | 'L'           |
-| 'D'          | 'D'       | 'Y'           | 'S'          | 'S'       | 'T'           |
+| 'D'          | 'D'       | 'Y'           | 'S'          | 'S'       | 'K'           |
 | 'E'          | 'E'       | 'U'           | 'T'          | 'T'       | 'MENT'        |
 | 'F'          | 'F'       | 'OR'          | 'U'          | 'U'       | 'E'           |
 | 'G'          | 'G'       | 'ENERAL'      | 'V'          | 'V'       |               |
