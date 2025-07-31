@@ -85,25 +85,30 @@ Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane k
 
 ### Number Layer
 ![Number Keymap](draw\num_keymap.svg)
-
+<img src="draw\num_keymap.svg">
 
 Tapping the num-word key toggles the num layer until the number is finished, holding momentarily switched to the number layer.
 
 ### Function Layer
 ![Function Keymap](draw\fun_keymap.svg)
+<img src="draw\fun_keymap.svg">
 
 ### Navigation Layer
 ![Navigation Keymap](draw\nav_keymap.svg)
+<img src="draw\nav_keymap.svg">
 
 ### Mouse Layer
 ![Mouse Keymap](draw\mouse_keymap.svg)
+<img src="draw\mouse_keymap.svg">
 
 The mouse layer is analogous to the navigation layer, and is accessed with the smart-mouse combo.
 
 ### Symbol Layer 
 ![Symbol Keymap](draw\sym_keymap.svg)
+<img src="draw\sym_keymap.svg">
 
 ### Accent Layer
 ![Accent Keymap](draw\acc_keymap.svg)
+<img src="draw\acc_keymap.svg">
 
 Requires the use of my [Autohotkey config](https://github.com/Nathanix321/autohotkey-config).
