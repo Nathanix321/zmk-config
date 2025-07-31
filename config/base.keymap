@@ -114,7 +114,7 @@ ZMK_HOLD_TAP(arcane_l_shft, bindings = <&kp>, <&arcane_l>;
 ZMK_ADAPTIVE_KEY(
     arcane_l, bindings = <&none>;
     kp_a_left     { strict-modifiers; trigger-keys = <A>;     max-prior-idle-ms = <1200>; bindings = <&kp A>;                                        }; // |A|
-    kp_b_left     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1200>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;          }; // |ECAUSE|
+    kp_b_left     { strict-modifiers; trigger-keys = <B>;     max-prior-idle-ms = <1200>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;}; // |ECAUSE |
     kp_c_left     { strict-modifiers; trigger-keys = <C>;     max-prior-idle-ms = <1200>; bindings = <&kp A &kp N>;                                  }; // |AN|
     kp_d_left     { strict-modifiers; trigger-keys = <D>;     max-prior-idle-ms = <1200>; bindings = <&kp Y>;                                        }; // |Y|
     kp_e_left     { strict-modifiers; trigger-keys = <E>;     max-prior-idle-ms = <1200>; bindings = <&kp E>;                                        }; // |E|
