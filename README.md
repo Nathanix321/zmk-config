@@ -50,7 +50,7 @@ Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane k
 
 | Previous key | Same hand | Opposite hand | Previous key | Same hand | Opposite hand |
 |--------------|-----------|---------------|--------------|-----------|---------------|
-| 'A'          | 'A'       | 'ND '         | 'P'          | 'P'       | 'RETTY'       |
+| 'A'          | 'A'       | 'U'           | 'P'          | 'P'       | 'RETTY'       |
 | 'B'          | 'B'       | 'ECAUSE '     | 'Q'          | 'Q'       | 'UEEN'        |
 | 'C'          | 'C'       | 'AN'          | 'R'          | 'R'       | 'L'           |
 | 'D'          | 'D'       | 'Y'           | 'S'          | 'S'       | 'K'           |
