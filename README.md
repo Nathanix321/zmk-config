@@ -15,7 +15,7 @@ First things first, big thanks to :
 
 <img src="draw\base_keymap.svg">
 
-After i bought my keyboard, I looked at layouts and keymaps for days, I ended up with this list of requirements, I zeroed in on thumb alpha layouts (might as well go for broke if I'm moving away from QWERTY).
+After I bought my keyboard, I looked at layouts and keymaps for days, I landed on the requirement of trying a thumb alpha layout (might as well go for broke if I'm moving away from QWERTY).
 
 I looked at [Hands Down Gold](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.1cdqya5986v5) and [Night](https://luminespire.github.io/night/home.html), great layouts, but I completely fell in love with the concept of Arcane keys from [Nordrassil](https://github.com/empressabyss/nordrassil), so I ended up with it's abyssal variant, with a few mod morphs allowing me to move Z back into the main alpha grid.
 
@@ -44,9 +44,9 @@ I also made space for 4 macros, their use is up to you!
 Finally I made use of caps-word, and num-word.
 
 ### Arcane Keys
-[Nordrassil](https://github.com/empressabyss/nordrassil) implements what [Empress Abyss](https://github.com/empressabyss) calls Arcane keys, which are basically souped up magic keys. Their function depends on the last key you pressed. 
+[Nordrassil](https://github.com/empressabyss/nordrassil) implements what [Empress Abyss](https://github.com/empressabyss) calls Arcane keys, which are basically souped-up magic keys. Their function depends on the last key you pressed. 
 
-Rule of thumb : same side arcane key trigger is a repeat, opposite side arcane key trigger is a more complex sequence. Here's the full table : 
+Rule of thumb : same side arcane key trigger is a repeat (except for T), opposite side arcane key trigger is for something else. Here's the full table : 
 
 | Previous key | Same hand | Opposite hand | Previous key | Same hand | Opposite hand |
 |--------------|-----------|---------------|--------------|-----------|---------------|
@@ -80,7 +80,7 @@ Tapping the num-word key toggles the num layer until the number is finished, hol
 ### Mouse Layer
 <img src="draw\mouse_keymap.svg">
 
-The mouse layer is analogous to the navigation layer, and is accessed with the smart-mouse combo.
+The mouse layer is analogous to the navigation layer, and is accessed with the smart-mouse combo. Mouse layer stays activated until you hit the combo again or hit an  empty key.
 
 ### Symbol Layer 
 <img src="draw\sym_keymap.svg">
