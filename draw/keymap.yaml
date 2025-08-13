@@ -7,11 +7,11 @@ layers:
     - [{h: Gui, t: H}, {h: Alt, t: I}, {h: Ctrl, t: E}, {h: Shift, t: A}, {s: ":", t: "."}, P, {h: Shift, t: D}, {h: Ctrl, t: R}, {h: Alt, t: S}, {h: Gui, t: L}]
     - [X, {s: "!", t: "?"}, {s: "\"", t: "'"}, {s: ";", t: ","}, Z, B, C, M, F, V]
     - {h: Num, t: num-word}
-    - {h: Fun, t: Space}
-    - {h: Shift, t: ⟐}
+    - {h: Shift, t: Space}
     - {h: Nav, t: ⟐}
+    - {h: Acc, t: ⟐}
     - {h: Sym, t: T}
-    - {h: Acc, t: Bspace}
+    - {h: Fun, t: Bspace}
   NUM:
     - [null, null, null, null, null, "*", "7", "8", "9", {s: ";", t: ","}]
     - [Gui, Alt, Ctrl, Alt, null, "+", "4", "5", "6", {s: ":", t: "."}]
@@ -22,33 +22,33 @@ layers:
     - "="
     - "0"
     - Bspace
-  FUN:
-    - [M0, M1, M2, M3, null, null, F7, F8, F9, F12]
-    - [⏮, Volume Down, Volume Up, ⏭, null, null, F4, F5, F6, F11]
-    - [BT0, BT1, BT2, BT3, BT Clear, null, F1, F2, F3, F10]
-    - null
-    - {type: held}
-    - null
-    - ⏹
-    - ⏯
-    - Mute
   NAV:
     - [Undo, Cut, Copy, Paste, Redo, null, null, null, null, null]
     - [←, ↓, ↑, →, "Caps Lock", null, Shift, Ctrl, Alt, Gui]
     - [Home, "Page Down", "Page Up", End, Ins, null, null, null, null, null]
-    - Bspace
-    - Space
+    - null
     - null
     - {type: held}
     - null
-    - null
+    - Space
+    - Bspace
   MOUSE:
     - [Undo, Cut, Copy, Paste, Redo, null, null, null, null, null]
     - [←, ↓, ↑, →, "Caps Lock", null, Shift, Ctrl, Alt, Gui]
     - [Scroll left, Scroll down, Scroll up, Scroll down, Ins, null, null, null, null, null]
+    - Bspace
+    - Space
+    - Shift
     - M
     - L
     - R
+  ACC:
+    - ["Ü", "Ô", "Ê", "Ë", null, null, null, null, null, null]
+    - [{h: Gui, t: "Û"}, {h: Alt, t: "Î"}, {h: Ctrl, t: "É"}, {h: Shift, t: "À"}, null, null, Shift, Ctrl, Alt, Gui]
+    - ["Ù", "Ï", "È", "Â", null, null, "Ç", null, null, null]
+    - Bspace
+    - Space
+    - {h: Shift, t: ⟐}
     - {type: held}
     - null
     - null
@@ -62,23 +62,23 @@ layers:
     - null
     - {type: held}
     - null
-  ACC:
-    - ["Ü", "Ô", "Ê", "Ë", null, null, null, null, null, null]
-    - [{h: Gui, t: "Û"}, {h: Alt, t: "Î"}, {h: Ctrl, t: "É"}, {h: Shift, t: "À"}, null, null, Shift, Ctrl, Alt, Gui]
-    - ["Ù", "Ï", "È", "Â", null, null, "Ç", null, null, null]
-    - Bspace
-    - Space
-    - {h: Shift, t: ⟐}
+  FUN:
+    - [M0, M1, M2, M3, null, null, F7, F8, F9, F12]
+    - [⏮, Volume Down, Volume Up, ⏭, null, null, F4, F5, F6, F11]
+    - [BT0, BT1, BT2, BT3, BT Clear, null, F1, F2, F3, F10]
+    - Mute
+    - ⏯
+    - ⏹
     - null
     - null
     - {type: held}
     
 combos:
   - {p: [2, 3], k: Esc, l: ["BASE"]}
-  - {p: [12, 13], k: Tab, l: ["BASE"]}
+  - {p: [3, 13], k: Tab, l: ["BASE"]}
   - {p: [22, 23], k: caps-word , l: ["BASE"]}
   - {p: [6, 7], k: Del, l: ["BASE"]}
-  - {p: [16, 17], k: Enter, l: ["BASE"]}
+  - {p: [16, 6], k: Enter, l: ["BASE"]}
   - {p: [26, 27], k: Ins, l: ["BASE"]}
   - {p: [26, 28], k: smart-mouse, l: ["NAV", "MOUSE"]}
   
