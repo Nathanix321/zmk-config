@@ -137,7 +137,7 @@ ZMK_HOLD_TAP(arcane_r_nav, bindings = <&mo>, <&arcane_r>;
 
 ZMK_ADAPTIVE_KEY(
     arcane_r, bindings = <&none>;
-    repeat         { strict-modifiers; trigger-keys = <B C D F G J K L M N P R S V W ENTER LSHFT(ENTER)>; max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                        }; // |REPEAT|
+    repeat         { strict-modifiers; trigger-keys = <B C D F G J K L M N P R S V W ENTER>; max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                        }; // |REPEAT|
     kp_a_right     { strict-modifiers; trigger-keys = <A>;                                   max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |ND |
     kp_e_right     { strict-modifiers; trigger-keys = <E>;                                   max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |U|
     kp_i_right     { strict-modifiers; trigger-keys = <I>;                                   max-prior-idle-ms = <2000>; bindings = <&kp O &kp N>;                                        }; // |ON|
@@ -150,6 +150,7 @@ ZMK_ADAPTIVE_KEY(
     kp_dot_right   { strict-modifiers; trigger-keys = <DOT>;                                 max-prior-idle-ms = <2000>; bindings = <&kp FSLH>;                                           }; // |/|
     kp_comma_right { strict-modifiers; trigger-keys = <COMMA>;                               max-prior-idle-ms = <2000>; bindings = <&kp SPACE &kp B &kp U &kp T &kp SPACE>;              }; // | BUT |
     kp_pound_right { strict-modifiers; trigger-keys = <POUND>;                               max-prior-idle-ms = <2000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
+    kp_shft_enter_right { strict-modifiers; trigger-keys = <LSHFT(ENTER)>;                   max-prior-idle-ms = <2000>; bindings = <&kp LSHFT(ENTER)>;                                              }; // |ND |
 )
 
 // Tap: num-word | Hold: num-layer.
