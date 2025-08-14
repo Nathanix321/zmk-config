@@ -132,9 +132,7 @@ rect.held, rect.combo.held { fill: #854747; }
 text.label, text.footer { stroke: black; }
 text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
-
-
-svg.keymap { background-color: #121212; }</style>
+</style>
 <g transform="translate(30, 0)" class="layer-BASE">
 <text x="0" y="28" class="label" id="BASE">BASE:</text>
 <g transform="translate(0, 56)">
@@ -280,17 +278,17 @@ svg.keymap { background-color: #121212; }</style>
 <g transform="translate(230, 213) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Space</text>
-<text x="0" y="24" class="key hold">Fun</text>
+<text x="0" y="24" class="key hold">Shift</text>
 </g>
 <g transform="translate(295, 224) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">⟐</text>
-<text x="0" y="38" class="key hold">Shift</text>
+<text x="0" y="38" class="key hold">Nav</text>
 </g>
 <g transform="translate(433, 224) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">⟐</text>
-<text x="0" y="38" class="key hold">Nav</text>
+<text x="0" y="38" class="key hold">Acc</text>
 </g>
 <g transform="translate(498, 213) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -300,33 +298,7 @@ svg.keymap { background-color: #121212; }</style>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Bspace</text>
-<text x="0" y="24" class="key hold">Acc</text>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="153" y="18" width="30" height="28" class="combo"/>
-<text x="168" y="32" class="combo tap">Esc</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="153" y="74" width="30" height="28" class="combo"/>
-<text x="168" y="88" class="combo tap">Tab</text>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="153" y="130" width="30" height="28" class="combo"/>
-<text x="168" y="144" class="combo tap">
-<tspan x="168" dy="-0.6em">caps-</tspan><tspan x="168" dy="1.2em">word</tspan>
-</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="545" y="18" width="30" height="28" class="combo"/>
-<text x="560" y="32" class="combo tap">Del</text>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="545" y="74" width="30" height="28" class="combo"/>
-<text x="560" y="88" class="combo tap">Enter</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="545" y="130" width="30" height="28" class="combo"/>
-<text x="560" y="144" class="combo tap">Ins</text>
+<text x="0" y="24" class="key hold">Fun</text>
 </g>
 </g>
 </g>

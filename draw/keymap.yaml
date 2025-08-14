@@ -12,6 +12,16 @@ layers:
     - {h: Acc, t: ⟐}
     - {h: Sym, t: T}
     - {h: Fun, t: Bspace}
+  COMBOS:
+    - [null, null, null, null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null]
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
   NUM:
     - [null, null, null, null, null, "*", "7", "8", "9", {s: ";", t: ","}]
     - [Gui, Alt, Ctrl, Alt, null, "+", "4", "5", "6", {s: ":", t: "."}]
@@ -74,11 +84,13 @@ layers:
     - {type: held}
     
 combos:
-  - {p: [2, 3], k: Esc, l: ["BASE"]}
-  - {p: [3, 13], k: Tab, l: ["BASE"]}
-  - {p: [22, 23], k: caps-word , l: ["BASE"]}
-  - {p: [6, 7], k: Del, l: ["BASE"]}
-  - {p: [16, 6], k: Enter, l: ["BASE"]}
-  - {p: [26, 27], k: Ins, l: ["BASE"]}
-  - {p: [26, 28], k: smart-mouse, l: ["NAV", "MOUSE"]}
+  - {p: [2, 12], k: Enter, l: ["COMBOS"]}
+  - {p: [3, 13], k: Tab, l: ["COMBOS"]}
+  - {p: [12, 22], k: Del, l: ["COMBOS"]}
+  - {p: [13, 23], k: Esc, l: ["COMBOS"]}
+  - {p: [6, 16], k: Tab, l: ["COMBOS"]}
+  - {p: [7, 17], k: Enter, l: ["COMBOS"]}
+  - {p: [16, 26], k: Esc, l: ["COMBOS"]}
+  - {p: [17, 27], k: Del, l: ["COMBOS"]}
+  - {p: [26, 28], k: smart-mouse, l: ["COMBOS"]}
   

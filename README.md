@@ -14,14 +14,13 @@ First things first, big thanks to :
 ### Overview 
 
 <img src="draw\base_keymap.svg">
+<img src="draw\combos_keymap.svg">
 
 After I bought my keyboard, I looked at layouts and keymaps for days, I landed on the requirement of trying a thumb alpha layout (might as well go for broke if I'm moving away from QWERTY).
 
 I looked at [Hands Down Gold](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.1cdqya5986v5) and [Night](https://luminespire.github.io/night/home.html), great layouts, but I completely fell in love with the concept of Arcane keys from [Nordrassil](https://github.com/empressabyss/nordrassil), so I ended up with it's abyssal variant, with a few mod morphs allowing me to move Z back into the main alpha grid.
 
 Other functions are then located on 6 additional layers : Numbers, Functions, Navigation, Symbols, Accents (Je suis Québécois, il me faut mes accents français!) which rely on my [Autohotkey config](https://github.com/Nathanix321/autohotkey-config).
-
-<img src="draw\whole_keymap.svg">
 
 ### Modules
 
