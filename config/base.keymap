@@ -103,7 +103,7 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 // Make space shift hold tap
 #define SPACE_SHFT &space_shft LSHFT 0
-ZMK_HOLD_TAP(space_shft, bindings = <&kp>, <SPACE>;
+ZMK_HOLD_TAP(space_shft, bindings = <&kp SPACE>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 
