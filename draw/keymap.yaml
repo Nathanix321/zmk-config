@@ -27,7 +27,7 @@ layers:
     - [Gui, Alt, Ctrl, Alt, null, "+", "4", "5", "6", {s: ":", t: "."}]
     - [null, null, null, null, null, "-", "1", "2", "3", /]
     - {type: held}
-    - Space
+    - {h: Shift, t: Space}
     - null
     - "="
     - "0"
@@ -40,15 +40,15 @@ layers:
     - null
     - {type: held}
     - null
-    - Space
+    - {h: Shift, t: Space}
     - Bspace
   MOUSE:
     - [Undo, Cut, Copy, Paste, Redo, null, null, null, null, null]
     - [←, ↓, ↑, →, "Caps Lock", null, Shift, Ctrl, Alt, Gui]
     - [Scroll left, Scroll down, Scroll up, Scroll down, Ins, null, null, null, null, null]
     - Bspace
-    - Space
-    - Shift
+    - {h: Shift, t: Space}
+    - null
     - M
     - L
     - R
@@ -57,8 +57,8 @@ layers:
     - [{h: Gui, t: "Û"}, {h: Alt, t: "Î"}, {h: Ctrl, t: "É"}, {h: Shift, t: "À"}, null, null, Shift, Ctrl, Alt, Gui]
     - ["Ù", "Ï", "È", "Â", null, null, "Ç", null, null, null]
     - Bspace
-    - Space
-    - {h: Shift, t: ⟐}
+    - {h: Shift, t: Space}
+    - null
     - {type: held}
     - null
     - null
@@ -67,8 +67,8 @@ layers:
     - ["!", "*", "/", "=", "&", "#", "(", ")", ";", "\""]
     - ["~", "+", "[", "]", "%", "@", ":", ",", ".", "'"]
     - Bspace
-    - Space
-    - ⟐
+    - {h: Shift, t: Space}
+    - null
     - null
     - {type: held}
     - null
