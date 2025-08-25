@@ -138,7 +138,7 @@ ZMK_ADAPTIVE_KEY(
     kp_pound { strict-modifiers; trigger-keys = <POUND>;                         max-prior-idle-ms = <2000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
 )
 
-#define AK_H &ak_h 0
+#define AK_H &ak_h BASE 0
 ZMK_ADAPTIVE_KEY(
    ak_h, bindings = <&kp H>;
    kp_ah { strict-modifiers; trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
