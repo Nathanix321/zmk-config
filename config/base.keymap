@@ -138,6 +138,7 @@ ZMK_ADAPTIVE_KEY(
     kp_pound { strict-modifiers; trigger-keys = <POUND>;                         max-prior-idle-ms = <2000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
 )
 
+#define AK_H &ak_h 0
 ZMK_ADAPTIVE_KEY(
    ak_h, binding = <&kp H>;
    kp_ah { strict-modifiers; trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
@@ -205,7 +206,7 @@ ZMK_BASE_LAYER(Base,
 //╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
     &kp Q             &kp Y             &kp O             &kp U             &kp MINUS          ,   &kp J                &kp G             &kp N             &kp W             &kp K           ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &hml LGUI &ak_h   &hml LALT I       &hml LCTRL E      &hml LSHFT A      &dot_morph         ,   &kp P                &hmr LSHFT D      &hmr LCTRL R      &hmr LALT S       &hmr LGUI L     ,
+    &hml LGUI AK_H    &hml LALT I       &hml LCTRL E      &hml LSHFT A      &dot_morph         ,   &kp P                &hmr LSHFT D      &hmr LCTRL R      &hmr LALT S       &hmr LGUI L     ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
