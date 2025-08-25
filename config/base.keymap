@@ -140,7 +140,7 @@ ZMK_ADAPTIVE_KEY(
 
 #define AK_H &ak_h 0
 ZMK_ADAPTIVE_KEY(
-   ak_h, binding = <&kp H>;
+   ak_h, bindings = <&kp H>;
    kp_ah { strict-modifiers; trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
    kp_eh { strict-modifiers; trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
    kp_uh { strict-modifiers; trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp O>; };
