@@ -99,21 +99,21 @@ ZMK_HOLD_TAP(arcane_l_nav, bindings = <&mo>, <&arcane_l>;
 
 ZMK_ADAPTIVE_KEY(
     arcane_l, bindings = <&none>;
-    repeat        { strict-modifiers; trigger-keys = <A E H I O Q T U X Y Z DOT>;     max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                  }; // |REPEAT|
-    kp_b_left     { strict-modifiers; trigger-keys = <B>;                             max-prior-idle-ms = <2000>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;}; // |ECAUSE |
-    kp_c_left     { strict-modifiers; trigger-keys = <C>;                             max-prior-idle-ms = <2000>; bindings = <&kp A &kp N>;                                  }; // |AN|
-    kp_d_left     { strict-modifiers; trigger-keys = <D>;                             max-prior-idle-ms = <2000>; bindings = <&kp Y>;                                        }; // |Y|
-    kp_f_left     { strict-modifiers; trigger-keys = <F>;                             max-prior-idle-ms = <2000>; bindings = <&kp O &kp R>;                                  }; // |OR|
-    kp_g_left     { strict-modifiers; trigger-keys = <G>;                             max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp E &kp R &kp A &kp L>;          }; // |ENERAL|
-    kp_j_left     { strict-modifiers; trigger-keys = <J>;                             max-prior-idle-ms = <2000>; bindings = <&kp U &kp S &kp T>;                            }; // |UST|
-    kp_l_left     { strict-modifiers; trigger-keys = <L>;                             max-prior-idle-ms = <2000>; bindings = <&kp K>;                                        }; // |K|
-    kp_m_left     { strict-modifiers; trigger-keys = <M>;                             max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
-    kp_n_left     { strict-modifiers; trigger-keys = <N>;                             max-prior-idle-ms = <2000>; bindings = <&kp I &kp O &kp N>;                            }; // |ION|
-    kp_p_left     { strict-modifiers; trigger-keys = <P>;                             max-prior-idle-ms = <2000>; bindings = <&kp R &kp E &kp T &kp T &kp Y>;                }; // |RETTY|
-    kp_r_left     { strict-modifiers; trigger-keys = <R>;                             max-prior-idle-ms = <2000>; bindings = <&kp L>;                                        }; // |L|
-    kp_s_left     { strict-modifiers; trigger-keys = <S>;                             max-prior-idle-ms = <2000>; bindings = <&kp K>;                                        }; // |K|
-    kp_w_left     { strict-modifiers; trigger-keys = <W>;                             max-prior-idle-ms = <2000>; bindings = <&kp H &kp I &kp C &kp H>;                      }; // |HICH|
-    kp_pound_left { strict-modifiers; trigger-keys = <POUND>;                         max-prior-idle-ms = <2000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
+    repeat   { strict-modifiers; trigger-keys = <A E H I O Q T U X Y Z DOT>; max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                  }; // |REPEAT|
+    kp_b     { strict-modifiers; trigger-keys = <B>;                         max-prior-idle-ms = <2000>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;}; // |ECAUSE |
+    kp_c     { strict-modifiers; trigger-keys = <C>;                         max-prior-idle-ms = <2000>; bindings = <&kp A &kp N>;                                  }; // |AN|
+    kp_d     { strict-modifiers; trigger-keys = <D>;                         max-prior-idle-ms = <2000>; bindings = <&kp Y>;                                        }; // |Y|
+    kp_f     { strict-modifiers; trigger-keys = <F>;                         max-prior-idle-ms = <2000>; bindings = <&kp O &kp R>;                                  }; // |OR|
+    kp_g     { strict-modifiers; trigger-keys = <G>;                         max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp E &kp R &kp A &kp L>;          }; // |ENERAL|
+    kp_j     { strict-modifiers; trigger-keys = <J>;                         max-prior-idle-ms = <2000>; bindings = <&kp U &kp S &kp T>;                            }; // |UST|
+    kp_l     { strict-modifiers; trigger-keys = <L>;                         max-prior-idle-ms = <2000>; bindings = <&kp K>;                                        }; // |K|
+    kp_m     { strict-modifiers; trigger-keys = <M>;                         max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
+    kp_n     { strict-modifiers; trigger-keys = <N>;                         max-prior-idle-ms = <2000>; bindings = <&kp I &kp O &kp N>;                            }; // |ION|
+    kp_p     { strict-modifiers; trigger-keys = <P>;                         max-prior-idle-ms = <2000>; bindings = <&kp R &kp E &kp T &kp T &kp Y>;                }; // |RETTY|
+    kp_r     { strict-modifiers; trigger-keys = <R>;                         max-prior-idle-ms = <2000>; bindings = <&kp L>;                                        }; // |L|
+    kp_s     { strict-modifiers; trigger-keys = <S>;                         max-prior-idle-ms = <2000>; bindings = <&kp K>;                                        }; // |K|
+    kp_w     { strict-modifiers; trigger-keys = <W>;                         max-prior-idle-ms = <2000>; bindings = <&kp H &kp I &kp C &kp H>;                      }; // |HICH|
+    kp_pound { strict-modifiers; trigger-keys = <POUND>;                     max-prior-idle-ms = <2000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
 )
 
 #define ARCANE_R_ACC &arcane_r_acc ACC 0
@@ -123,19 +123,27 @@ ZMK_HOLD_TAP(arcane_r_acc, bindings = <&mo>, <&arcane_r>;
 
 ZMK_ADAPTIVE_KEY(
     arcane_r, bindings = <&none>;
-    repeat         { strict-modifiers; trigger-keys = <B C D F G J K L M N P R S V W>;       max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                        }; // |REPEAT|
-    kp_a_right     { strict-modifiers; trigger-keys = <A>;                                   max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |ND |
-    kp_e_right     { strict-modifiers; trigger-keys = <E>;                                   max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |U|
-    kp_i_right     { strict-modifiers; trigger-keys = <I>;                                   max-prior-idle-ms = <2000>; bindings = <&kp O &kp N>;                                        }; // |ON|
-    kp_o_right     { strict-modifiers; trigger-keys = <O>;                                   max-prior-idle-ms = <2000>; bindings = <&kp A>;                                              }; // |A|
-    kp_q_right     { strict-modifiers; trigger-keys = <Q>;                                   max-prior-idle-ms = <2000>; bindings = <&kp U &kp E &kp E &kp N>;                            }; // |UEEN|
-    kp_t_right     { strict-modifiers; trigger-keys = <T>;                                   max-prior-idle-ms = <2000>; bindings = <&kp M &kp E &kp N &kp T>;                            }; // |MENT|
-    kp_u_right     { strict-modifiers; trigger-keys = <U>;                                   max-prior-idle-ms = <2000>; bindings = <&kp E>;                                              }; // |E|
-    kp_y_right     { strict-modifiers; trigger-keys = <Y>;                                   max-prior-idle-ms = <2000>; bindings = <&kp E &kp A &kp H>;                                  }; // |EAH|
-    kp_space_right { strict-modifiers; trigger-keys = <SPACE>;                               max-prior-idle-ms = <2000>; bindings = <&kp T &kp H &kp E &kp SPACE>;                        }; // |THE |
-    kp_dot_right   { strict-modifiers; trigger-keys = <DOT>;                                 max-prior-idle-ms = <2000>; bindings = <&kp FSLH>;                                           }; // |/|
-    kp_comma_right { strict-modifiers; trigger-keys = <COMMA>;                               max-prior-idle-ms = <2000>; bindings = <&kp SPACE &kp B &kp U &kp T &kp SPACE>;              }; // | BUT |
-    kp_pound_right { strict-modifiers; trigger-keys = <POUND>;                               max-prior-idle-ms = <2000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
+    repeat   { strict-modifiers; trigger-keys = <B C D F G J K L M N P R S V W>; max-prior-idle-ms = <2000>; bindings = <&key_repeat>;                                        }; // |REPEAT|
+    kp_a     { strict-modifiers; trigger-keys = <A>;                             max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |ND |
+    kp_e     { strict-modifiers; trigger-keys = <E>;                             max-prior-idle-ms = <2000>; bindings = <&kp U>;                                              }; // |U|
+    kp_i     { strict-modifiers; trigger-keys = <I>;                             max-prior-idle-ms = <2000>; bindings = <&kp O &kp N>;                                        }; // |ON|
+    kp_o     { strict-modifiers; trigger-keys = <O>;                             max-prior-idle-ms = <2000>; bindings = <&kp A>;                                              }; // |A|
+    kp_q     { strict-modifiers; trigger-keys = <Q>;                             max-prior-idle-ms = <2000>; bindings = <&kp U &kp E &kp E &kp N>;                            }; // |UEEN|
+    kp_t     { strict-modifiers; trigger-keys = <T>;                             max-prior-idle-ms = <2000>; bindings = <&kp M &kp E &kp N &kp T>;                            }; // |MENT|
+    kp_u     { strict-modifiers; trigger-keys = <U>;                             max-prior-idle-ms = <2000>; bindings = <&kp E>;                                              }; // |E|
+    kp_y     { strict-modifiers; trigger-keys = <Y>;                             max-prior-idle-ms = <2000>; bindings = <&kp E &kp A &kp H>;                                  }; // |EAH|
+    kp_space { strict-modifiers; trigger-keys = <SPACE>;                         max-prior-idle-ms = <2000>; bindings = <&kp T &kp H &kp E &kp SPACE>;                        }; // |THE |
+    kp_dot   { strict-modifiers; trigger-keys = <DOT>;                           max-prior-idle-ms = <2000>; bindings = <&kp FSLH>;                                           }; // |/|
+    kp_comma { strict-modifiers; trigger-keys = <COMMA>;                         max-prior-idle-ms = <2000>; bindings = <&kp SPACE &kp B &kp U &kp T &kp SPACE>;              }; // | BUT |
+    kp_pound { strict-modifiers; trigger-keys = <POUND>;                         max-prior-idle-ms = <2000>; bindings = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;}; // |INCLUDE |
+)
+
+ZMK_ADAPTIVE_KEY(
+   ak_h, binding = <&kp H>;
+   kp_ah { strict-modifiers; trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
+   kp_eh { strict-modifiers; trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
+   kp_uh { strict-modifiers; trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp O>; };
+   kp_oh { strict-modifiers; trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
 )
 
 // Tap: num-word | Hold: num-layer.
@@ -197,7 +205,7 @@ ZMK_BASE_LAYER(Base,
 //╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
     &kp Q             &kp Y             &kp O             &kp U             &kp MINUS          ,   &kp J                &kp G             &kp N             &kp W             &kp K           ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &hml LGUI H       &hml LALT I       &hml LCTRL E      &hml LSHFT A      &dot_morph         ,   &kp P                &hmr LSHFT D      &hmr LCTRL R      &hmr LALT S       &hmr LGUI L     ,
+    &hml LGUI ak_h    &hml LALT I       &hml LCTRL E      &hml LSHFT A      &dot_morph         ,   &kp P                &hmr LSHFT D      &hmr LCTRL R      &hmr LALT S       &hmr LGUI L     ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
