@@ -33,12 +33,6 @@
   quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&mt {
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <QUICK_TAP_MS>;
-};
-
 /* Homerow mods */
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
@@ -75,9 +69,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 &mt { MT_CORE };
 
-ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
-ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
-
 #ifdef UNDO
     #undef UNDO
 #endif
@@ -99,13 +90,6 @@ ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 #define CUT   &kp LC(X)
 #define COPY  &kp LC(C)
 #define PASTE &kp LC(V)
-
-// Mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
-#define MASK_MODS(NAME, MODS, BINDING)                                         \
-  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
-
-MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
-MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 /* Arcane keys & auto-layers */
 #define ARCANE_L_NAV &arcane_l_nav NAV 0
