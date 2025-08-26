@@ -6,13 +6,14 @@
 
 #include "zmk-helpers/helper.h"
 
-#define BASE      0
-#define NUM       1
-#define NAV       2
-#define MOUSE     3
-#define ACC       4
-#define SYM       5
-#define FUN       6
+#define ALPHA_1   0
+#define ALPHA_2   1
+#define NUM       2
+#define NAV       3
+#define MOUSE     4
+#define ACC       5
+#define SYM       6
+#define FUN       7
 
 /* Global defaults */
 
@@ -158,6 +159,10 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&num_word NUM>;
               tapping-term-ms = <200>;)
 
+#define ALPHA_NUM &alpha_num NUM 0
+ZMK_HOLD_TAP(alpha_num, bindings = <&mo>, <&sl ALPHA_2>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
 // Smart-mouse, requires tri-state module.
 ZMK_TRI_STATE(
     smart_mouse, bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
@@ -206,7 +211,7 @@ ZMK_MACRO(macro_3,
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
-ZMK_BASE_LAYER(Base,
+ZMK_BASE_LAYER(Alp_1,
 //╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
     &kp Q             &kp Y             &kp O             &kp U             &kp MINUS          ,   &kp J                &kp G             &kp N             &kp W             &kp K           ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
@@ -214,7 +219,19 @@ ZMK_BASE_LAYER(Base,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        SMART_NUM         &mt LSHFT SPACE   ARCANE_L_NAV       ,   ARCANE_R_ACC         &lt SYM T         &lt FUN BSPC
+                                        ALPHA_NUM         &mt LSHFT SPACE   ARCANE_L_NAV       ,   ARCANE_R_ACC         &lt SYM T         &lt FUN BSPC
+//                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
+)
+
+ZMK_BASE_LAYER(Alp_2,
+//╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
+    &none             &none             &none             &kp MINUS         &none              ,   &none                &kp J             &none             &none             &none           ,
+//├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+    &none             &none             &none             &dot_morph        &none              ,   &none                &kp P             &none             &none             &none           ,
+//├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+    &none             &none             &none             &kp Z             &none              ,   &none                &kp B             &none             &none             &none           ,
+//╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
+                                        &none             &none             &none              ,   &none                &none             &none
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
