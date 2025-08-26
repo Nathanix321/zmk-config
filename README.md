@@ -45,25 +45,26 @@ Finally I made use of caps-word, and num-word.
 ### Arcane Keys
 [Nordrassil](https://github.com/empressabyss/nordrassil) implements what [Empress Abyss](https://github.com/empressabyss) calls Arcane keys, which are basically souped-up magic keys. Their function depends on the last key you pressed. 
 
-Rule of thumb : same side arcane key trigger is a repeat (except for T), opposite side arcane key trigger is for something else. Here's the full table : 
+Rule of thumb : same side arcane key trigger is a repeat (except for T and #), opposite side arcane key trigger is for something else. Logic is inversed for T and right completes with 'MENT'. Left completes # with 'DEFINE', right completes # with 'INCLUDE'. Here's the full table : 
 
-| Previous key | Same hand | Opposite hand | Previous key | Same hand | Opposite hand |
-|--------------|-----------|---------------|--------------|-----------|---------------|
-| 'A'          | 'A'       | 'U'           | 'P'          | 'P'       | 'RETTY'       |
-| 'B'          | 'B'       | 'ECAUSE '     | 'Q'          | 'Q'       | 'UEEN'        |
-| 'C'          | 'C'       | 'AN'          | 'R'          | 'R'       | 'L'           |
-| 'D'          | 'D'       | 'Y'           | 'S'          | 'S'       | 'K'           |
-| 'E'          | 'E'       | 'U'           | 'T'          | 'T'       | 'MENT'        |
-| 'F'          | 'F'       | 'OR'          | 'U'          | 'U'       | 'E'           |
-| 'G'          | 'G'       | 'ENERAL'      | 'V'          | 'V'       |               |
-| 'H'          | 'H'       |               | 'W'          | 'W'       | 'HICH'        |
-| 'I'          | 'I'       | 'ON'          | 'X'          | 'X'       |               |
-| 'J'          | 'J'       | 'UST'         | 'Y'          | 'Y'       | 'EAH'         |
-| 'K'          | 'K'       |               | 'Z'          | 'Z'       |               |
-| 'L'          | 'L'       | 'K'           | 'SPACE'      |           | 'THE '        |
-| 'M'          | 'M'       | 'ENT'         | '.'          | '.'       | '/'           |
-| 'N'          | 'N'       | 'ION'         | ','          |           | ' BUT '       |
-| 'O'          | 'O'       | 'A'           | '#'          | INCLUDE   | DEFINE        |
+| Previous key | Opposite hand | Previous key | Opposite hand |
+|--------------|---------------|--------------|---------------|
+| 'A'          | 'ND '         | 'O'          | 'I'           |
+| 'B'          | 'ECAUSE '     | 'P'          | 'RETTY'       |
+| 'C'          | 'K'           | 'Q'          | 'UEEN'        |
+| 'D'          | 'CD'          | 'R'          | 'M'           |
+| 'E'          | 'U'           | 'S'          | 'K'           |
+| 'F'          | 'OR'          | 'U'          | 'E'           |
+| 'G'          | 'ENERAL'      | 'V'          |               |
+| 'H'          |               | 'W'          | 'HICH'        |
+| 'I'          | 'ON'          | 'X'          |               |
+| 'J'          | 'UST'         | 'Y'          | 'EAH'         |
+| 'K'          |               | 'Z'          |               |
+| 'L'          | 'K'           | 'SPACE'      | 'THE '        |
+| 'M'          | 'ENT'         | '.'          | '/'           |
+| 'N'          | 'ION'         | ','          | ' BUT '       |
+
+I have also borrowed the adaptive H from [Hands-Down Gold](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w), which solves the 'AU', 'EO', 'UA', 'OE' and 'RN' SFBs.
 
 ### Number Layer
 <img src="draw\num_keymap.svg">
