@@ -159,8 +159,8 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&num_word NUM>;
               tapping-term-ms = <200>;)
 
-#define ALPHA_NUM &alpha_num NUM 0
-ZMK_HOLD_TAP(alpha_num, bindings = <&mo>, <&sl ALPHA_2>; flavor = "balanced";
+#define ALPHA_NUM &alpha_num NUM ALPHA_2
+ZMK_HOLD_TAP(alpha_num, bindings = <&mo>, <&sl>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
 // Smart-mouse, requires tri-state module.
