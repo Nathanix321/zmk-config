@@ -31,7 +31,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <0>;
 };
 
 /* Homerow mods */
@@ -65,7 +65,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 #define MT_CORE                                                                  \
     flavor = "tap-preferred";                                                    \
     tapping-term-ms = <220>;                                                     \
-    quick-tap-ms = <220>;                                                        \
+    quick-tap-ms = <0>;                                                          \
     hold-trigger-key-positions = <0>;
 
 &mt { MT_CORE };
@@ -181,6 +181,18 @@ ZMK_HOLD_TAP(hml_dot_morph, bindings = <&kp>, <&dot_morph>; flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>;)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 
+#define HML_REPEAT &hml_repeat LGUI 0
+ZMK_HOLD_TAP(hml_repeat, bindings = <&kp>, <&key_repeat>; flavor = "balanced";
+            tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <150>; hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;)
+
+#define HMR_REPEAT &hmr_repeat LGUI 0
+ZMK_HOLD_TAP(hmr_repeat, bindings = <&kp>, <&key_repeat>; flavor = "balanced";
+            tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <150>; hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;)
+
 // Tap: question mark | Shift + tap: exclamation point.
 SIMPLE_MORPH(qexcl_morph, SFT, &kp QMARK, &kp EXCL)
 
@@ -224,11 +236,11 @@ ZMK_BASE_LAYER(Alpha1,
 
 ZMK_BASE_LAYER(Alpha2,
 //╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
-    &none             &none             &kp RA(O)         &kp RA(D)         &none              ,   &none                &kp J             &kp RA(D)         &kp RA(J)         &none           ,
+    &key_repeat       &none             &kp RA(O)         &kp RA(D)         &none              ,   &none                &kp J             &kp RA(D)         &kp RA(J)         &key_repeat     ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &kp LGUI          &hml LALT RA(I)   &hml LCTRL RA(E)  &hml LSHFT RA(A)  &none              ,   &none                &hmr LSHFT P      &hmr LCTRL RA(W)  &hmr LALT RA(U)   &kp LGUI        ,
+    HML_REPEAT        &hml LALT RA(I)   &hml LCTRL RA(E)  &hml LSHFT RA(A)  &none              ,   &none                &hmr LSHFT P      &hmr LCTRL RA(W)  &hmr LALT RA(U)   HMR_REPEAT      ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &none             &kp RA(K)         &kp RA(R)         &kp Z             &none              ,   &none                &kp B             &kp RA(C)         &kp RA(Y)         &none           ,
+    &key_repeat       &kp RA(K)         &kp RA(R)         &kp Z             &none              ,   &none                &kp B             &kp RA(C)         &kp RA(Y)         &key_repeat     ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
                                         &kp BSPC          &mt LSHFT SPACE   &arcane_l          ,   &none                &none             &none
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
