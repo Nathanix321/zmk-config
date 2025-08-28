@@ -6,14 +6,13 @@
 
 #include "zmk-helpers/helper.h"
 
-#define ALPHA_1   0
-#define ALPHA_2   1
+#define ALPHA1    0
+#define ALPHA2    1
 #define NUM       2
 #define NAV       3
 #define MOUSE     4
-#define ACC       5
-#define SYM       6
-#define FUN       7
+#define SYM       5
+#define FUN       6
 
 /* Global defaults */
 
@@ -118,8 +117,8 @@ ZMK_ADAPTIVE_KEY(
     kp_pound { strict-modifiers; trigger-keys = <POUND>;                     max-prior-idle-ms = <2000>; bindings = <&kp D &kp E &kp F &kp I &kp N &kp E &kp SPACE>;}; // |DEFINE |
 )
 
-#define ARCANE_R_ACC &arcane_r_acc ACC 0
-ZMK_HOLD_TAP(arcane_r_acc, bindings = <&mo>, <&arcane_r>;
+#define ARCANE_R_ALPHA2 &arcane_r_alpha2 ALPHA2 0
+ZMK_HOLD_TAP(arcane_r_alpha2, bindings = <&mo>, <&arcane_r>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 
@@ -154,12 +153,8 @@ ZMK_ADAPTIVE_KEY(
 )
 
 // Tap: num-word | Hold: num-layer.
-#define SMART_NUM &smart_num NUM NUM
-ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_word>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-
-#define ALPHA_NUM &alpha_num NUM ALPHA_2
-ZMK_HOLD_TAP(alpha_num, bindings = <&mo>, <&sl>; flavor = "balanced";
+#define CAPS_NUM &smart_num NUM 0
+ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&caps_word>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
 // Smart-mouse, requires tri-state module.
@@ -223,19 +218,19 @@ ZMK_BASE_LAYER(Alpha1,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
     &kp X             &qexcl_morph      &kp APOS          &comma_morph      &kp Z              ,   &kp B                &kp C             &kp M             &kp F             &kp V           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        ALPHA_NUM         &mt LSHFT SPACE   ARCANE_L_NAV       ,   ARCANE_R_ACC         &lt SYM T         &lt FUN BSPC
+                                        CAPS_NUM          &mt LSHFT SPACE   ARCANE_L_NAV       ,   ARCANE_R_ALPHA2         &lt SYM T         &lt FUN BSPC
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
 ZMK_BASE_LAYER(Alpha2,
 //╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
-    &none             &none             &none             &kp MINUS         &none              ,   &none                &kp J             &none             &none             &none           ,
+    &none             &none             &kp RA(O)         &kp RA(D)         &none              ,   &none                &kp J             &kp RA(D)         &kp RA(J)         &none           ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &kp LGUI          &kp LALT          &kp LCTRL         HML_DOT_MORPH     &none              ,   &none                &hmr LSHFT P      &kp LCTRL         &kp LALT          &kp LGUI        ,
+    &kp LGUI          &hml LALT RA(I)   &hml LCTRL RA(E)  &hml LSHFT RA(A)  &none              ,   &none                &hmr LSHFT P      &hmr LCTRL RA(W)  &hmr LALT RA(U)   &kp LGUI        ,
 //├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &none             &none             &none             &kp Z             &none              ,   &none                &kp B             &none             &none             &none           ,
+    &none             &kp RA(K)         &kp RA(R)         &kp Z             &none              ,   &none                &kp B             &kp RA(C)         &kp RA(Y)         &none           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        &none             &mt LSHFT SPACE   &none              ,   &none                &none             &kp BSPC
+                                        &kp BSPC          &mt LSHFT SPACE   &arcane_l          ,   &none                &none             &none
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
@@ -272,18 +267,6 @@ ZMK_BASE_LAYER(Mouse,
     U_WH_L            U_WH_D            U_WH_U            U_WH_R            &kp INS            ,   &none                &none             &none             &none             &none           ,
 //╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
                                         &kp BSPC          &mt LSHFT SPACE   &none              ,   &mkp MCLK            &mkp LCLK         &mkp RCLK
-//                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
-)
-
-ZMK_BASE_LAYER(Acc,
-//╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬────────────────────╮ ╭────────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮
-    &kp RA(J)         &kp RA(O)         &kp RA(W)         &kp RA(D)         &none              ,   &none                &none             &none             &none             &none           ,
-//├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &hml LGUI RA(U)   &hml LALT RA(I)   &hml LCTRL RA(E)  &hml LSHFT RA(A)  &none              ,   &none                &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI        ,
-//├─────────────────┼─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
-    &kp RA(Y)         &kp RA(K)         &kp RA(R)         &kp RA(S)         &none              ,   &none                &kp RA(C)         &none             &none             &none           ,
-//╰─────────────────┴─────────────────┼─────────────────┼─────────────────┼────────────────────┤ ├────────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯
-                                        &kp BSPC          &mt LSHFT SPACE   &none              ,   &none                &none             &none
 //                                    ╰─────────────────┴─────────────────┴────────────────────╯ ╰────────────────────┴─────────────────┴─────────────────╯
 )
 
