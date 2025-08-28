@@ -95,7 +95,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 /* Arcane keys & auto-layers */
 #define ARCANE_L_NAV &arcane_l_nav NAV 0
 ZMK_HOLD_TAP(arcane_l_nav, bindings = <&mo>, <&arcane_l>;
-             flavor = "balanced"; tapping-term-ms = <200>;
+             flavor = "hold-preferred"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 
 ZMK_ADAPTIVE_KEY(
@@ -119,7 +119,7 @@ ZMK_ADAPTIVE_KEY(
 
 #define ARCANE_R_ALPHA2 &arcane_r_alpha2 ALPHA2 0
 ZMK_HOLD_TAP(arcane_r_alpha2, bindings = <&mo>, <&arcane_r>;
-             flavor = "balanced"; tapping-term-ms = <200>;
+             flavor = "hold-preferred"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 
 ZMK_ADAPTIVE_KEY(
