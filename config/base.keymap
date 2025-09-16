@@ -206,7 +206,7 @@ ZMK_MACRO(macro_1,
 ZMK_MACRO(macro_2,
     wait-ms = <30>;
     tap-ms = <1>;
-    bindings = <&kp L &kp E &kp T &kp N &kp N1 &kp N1 &kp N0 &kp N2 &kp AT &kp U &kp S &kp H &kp E &kp R &kp B &kp R &kp O &kp O &kp K &kp E &kp DOT &kp C &kp O &kp M>;
+    bindings = <&kp L &kp E &kp T &kp N &kp N1 &kp N1 &kp N0 &kp N2 &kp AT &kp U &kp S &kp H &kp E &kp R &kp B &kp R &kp O &kp O &kp K &kp E &kp DOT &kp C &kp A>;
 )
 
 ZMK_MACRO(macro_3,
