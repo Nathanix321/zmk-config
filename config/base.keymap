@@ -108,7 +108,7 @@ ZMK_ADAPTIVE_KEY(
     kp_g     { strict-modifiers; trigger-keys = <G>;                         max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp E &kp R &kp A &kp L>;          }; // |ENERAL|
     kp_j     { strict-modifiers; trigger-keys = <J>;                         max-prior-idle-ms = <2000>; bindings = <&kp U &kp S &kp T>;                            }; // |UST|
     kp_l     { strict-modifiers; trigger-keys = <L>;                         max-prior-idle-ms = <2000>; bindings = <&kp K>;                                        }; // |K|
-    kp_m     { strict-modifiers; trigger-keys = <M LSHFT(M)>;                max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
+    kp_m     { trigger-keys = <M>;                         max-prior-idle-ms = <2000>; bindings = <&kp E &kp N &kp T>;                            }; // |ENT|
     kp_n     { strict-modifiers; trigger-keys = <N>;                         max-prior-idle-ms = <2000>; bindings = <&kp I &kp O &kp N>;                            }; // |ION|
     kp_p     { strict-modifiers; trigger-keys = <P>;                         max-prior-idle-ms = <2000>; bindings = <&kp R &kp E &kp T &kp T &kp Y>;                }; // |RETTY|
     kp_r     { strict-modifiers; trigger-keys = <R>;                         max-prior-idle-ms = <2000>; bindings = <&kp M>;                                        }; // |M|
